@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DS2" targetNamespace="http://tempuri.org/DS2.xsd" xmlns:mstns="http://tempuri.org/DS2.xsd" xmlns="http://tempuri.org/DS2.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DS2" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DS2" msprop:Generator_UserDSName="DS2">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Bills2" msprop:Generator_TableClassName="Bills2DataTable" msprop:Generator_TableVarName="tableBills2" msprop:Generator_TablePropName="Bills2" msprop:Generator_RowDeletingName="Bills2RowDeleting" msprop:Generator_RowChangingName="Bills2RowChanging" msprop:Generator_RowEvHandlerName="Bills2RowChangeEventHandler" msprop:Generator_RowDeletedName="Bills2RowDeleted" msprop:Generator_UserTableName="Bills2" msprop:Generator_RowChangedName="Bills2RowChanged" msprop:Generator_RowEvArgName="Bills2RowChangeEvent" msprop:Generator_RowClassName="Bills2Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Bills_id" msprop:Generator_ColumnVarNameInTable="columnBills_id" msprop:Generator_ColumnPropNameInRow="Bills_id" msprop:Generator_ColumnPropNameInTable="Bills_idColumn" msprop:Generator_UserColumnName="Bills_id" type="xs:long" minOccurs="0" />
+              <xs:element name="Bills_members_name" msprop:Generator_ColumnVarNameInTable="columnBills_members_name" msprop:Generator_ColumnPropNameInRow="Bills_members_name" msprop:Generator_ColumnPropNameInTable="Bills_members_nameColumn" msprop:Generator_UserColumnName="Bills_members_name" type="xs:string" minOccurs="0" />
+              <xs:element name="Bills_date" msprop:Generator_ColumnVarNameInTable="columnBills_date" msprop:Generator_ColumnPropNameInRow="Bills_date" msprop:Generator_ColumnPropNameInTable="Bills_dateColumn" msprop:Generator_UserColumnName="Bills_date" type="xs:string" minOccurs="0" />
+              <xs:element name="Bills_date_update" msprop:Generator_ColumnVarNameInTable="columnBills_date_update" msprop:Generator_ColumnPropNameInRow="Bills_date_update" msprop:Generator_ColumnPropNameInTable="Bills_date_updateColumn" msprop:Generator_UserColumnName="Bills_date_update" type="xs:string" minOccurs="0" />
+              <xs:element name="Bills_sum" msprop:Generator_ColumnVarNameInTable="columnBills_sum" msprop:Generator_ColumnPropNameInRow="Bills_sum" msprop:Generator_ColumnPropNameInTable="Bills_sumColumn" msprop:Generator_UserColumnName="Bills_sum" type="xs:long" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,439 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D7F9420E-03E3-42B7-97E1-689315150074}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RPT_Manager</RootNamespace>
+    <AssemblyName>RPT_Manager</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>RPT_Manager.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="EntityFramework">
+      <HintPath>E:\دورات رائعة\كورسات متنوعة\عن قواعد البيانات\C# للفيجيوال ستديو و ال Sqlite مكتبات\Sqlite أهم شي مشان\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="MetroFramework">
+      <HintPath>E:\دورات رائعة\كورسات متنوعة\visual studio c# and database\ملفات مفيدة من أجل flat ui\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design">
+      <HintPath>E:\دورات رائعة\كورسات متنوعة\visual studio c# and database\ملفات مفيدة من أجل flat ui\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts">
+      <HintPath>E:\دورات رائعة\كورسات متنوعة\visual studio c# and database\ملفات مفيدة من أجل flat ui\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SQLite, Version=1.0.112.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\System.Data.SQLite.Core.1.0.112.0\lib\net45\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SQLite.EF6">
+      <HintPath>D:\Programming Files\Sqlite System Data\2012\bin\System.Data.SQLite.EF6.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SQLite.Linq">
+      <HintPath>D:\Programming Files\Sqlite System Data\2012\bin\System.Data.SQLite.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="theme">
+      <HintPath>E:\دورات رائعة\كورسات متنوعة\visual studio c# and database\ملف ثيمات\theme.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Bills1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bills1.Designer.cs">
+      <DependentUpon>Bills1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bills_add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bills_add.Designer.cs">
+      <DependentUpon>Bills_add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bills_update.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bills_update.Designer.cs">
+      <DependentUpon>Bills_update.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bills_update_add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bills_update_add.Designer.cs">
+      <DependentUpon>Bills_update_add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassNumbersOnly.cs" />
+    <Compile Include="ControlPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ControlPanel.Designer.cs">
+      <DependentUpon>ControlPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CrystalReport1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReport2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReport3.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport3.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CrystalViewer.Designer.cs">
+      <DependentUpon>CrystalViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DS.cs">
+      <DependentUpon>DS.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS1.cs">
+      <DependentUpon>DS1.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DS1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS2.cs">
+      <DependentUpon>DS2.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DS2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main_Program.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main_Program.Designer.cs">
+      <DependentUpon>Main_Program.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Members.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Members.Designer.cs">
+      <DependentUpon>Members.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pharm_add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pharm_add.Designer.cs">
+      <DependentUpon>Pharm_add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Repository.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Repository.Designer.cs">
+      <DependentUpon>Repository.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AboutProgram.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutProgram.Designer.cs">
+      <DependentUpon>AboutProgram.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Print.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Print.Designer.cs">
+      <DependentUpon>Print.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Pharm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pharm.Designer.cs">
+      <DependentUpon>Pharm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Print1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Print1.Designer.cs">
+      <DependentUpon>Print1.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Bills1.resx">
+      <DependentUpon>Bills1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bills_add.resx">
+      <DependentUpon>Bills_add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bills_update.resx">
+      <DependentUpon>Bills_update.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bills_update_add.resx">
+      <DependentUpon>Bills_update_add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlPanel.resx">
+      <DependentUpon>ControlPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport3.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport3.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalViewer.resx">
+      <DependentUpon>CrystalViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main_Program.resx">
+      <DependentUpon>Main_Program.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Members.resx">
+      <DependentUpon>Members.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pharm_add.resx">
+      <DependentUpon>Pharm_add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Repository.resx">
+      <DependentUpon>Repository.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AboutProgram.resx">
+      <DependentUpon>AboutProgram.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Print.resx">
+      <DependentUpon>Print.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Pharm.resx">
+      <DependentUpon>Pharm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Print1.resx">
+      <DependentUpon>Print1.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="DS.xsc">
+      <DependentUpon>DS.xsd</DependentUpon>
+    </None>
+    <None Include="DS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DS.xss">
+      <DependentUpon>DS.xsd</DependentUpon>
+    </None>
+    <None Include="DS1.xsc">
+      <DependentUpon>DS1.xsd</DependentUpon>
+    </None>
+    <None Include="DS1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DS1.xss">
+      <DependentUpon>DS1.xsd</DependentUpon>
+    </None>
+    <None Include="DS2.xsc">
+      <DependentUpon>DS2.xsd</DependentUpon>
+    </None>
+    <None Include="DS2.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS2.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DS2.xss">
+      <DependentUpon>DS2.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\83-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\34983594-lock-on-shield-concept-internet-protection-login.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\538684-lock_512x512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fall_profile.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\02%28690%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6da2cc048ea3e86c832e91ccb1de9c19.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\awesome-sunshine-trees07.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\74399626-x-close-icon-blue-website-button-on-white-background-.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bulb-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\78060980-lock-icon-user-login-or-authenticate-icon-flat-design-style-.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5zijf02cgu6y.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\A.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\above_thearrow_1550.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\325799_preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bulb-5121.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\240px-Deletion_icon.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\15134791_1324168620950729_1825093441834919713_n.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\45-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\21201553753280.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unlock1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Next_arrow_1559.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\74399626-x-close-icon-blue-website-button-on-white-background-1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_logo_brand_brands_logos_sketch_app_2993662.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Exit.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1024px-Breezeicons-actions-32-window-close.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\240px-Deletion_icon.svg1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\autumn-4k-8k-landscape-nature-park-road-wallpaper_2043279812.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0e9e8812f01f82650833264673bf51ed.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\city-sunset.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\System.Data.SQLite.Core.1.0.112.0\build\net45\System.Data.SQLite.Core.targets" Condition="Exists('..\packages\System.Data.SQLite.Core.1.0.112.0\build\net45\System.Data.SQLite.Core.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,3 @@
+C:\Users\علي\documents\visual studio 2013\Projects\Salameh\Salameh\bin\Debug\Salameh.exe.config
+C:\Users\علي\documents\visual studio 2013\Projects\Salameh\Salameh\obj\Debug\Salameh.exe
+C:\Users\علي\documents\visual studio 2013\Projects\Salameh\Salameh\obj\Debug\Salameh.pdb
